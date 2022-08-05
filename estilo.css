@@ -1,0 +1,67 @@
+body {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  background-image: url(https://www.certidoes.blog.br/calculo/wp-content/uploads/2013/10/C%C3%A1lculo-Trabalhista.jpg);
+  background-repeat: cover;
+  background-size: auto;
+  font-family: "PT Serif", serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+#centro {
+  margin: auto;
+  background: rgba(255, 255, 255, 0.849);
+  text-align: center;
+  min-width: 335px;
+
+  min-height: 380px;
+  border: solid rgba(43, 42, 42, 0.678);
+  border-radius: 75px 10px 75px 10px;
+}
+#viu {
+  padding-top: 1cm;
+}
+
+.cpf {
+  outline: none;
+  height: 30px;
+  width: 300px;
+  border-bottom: solid rgb(36, 169, 231);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 20px;
+}
+main {
+  position: absolute;
+  display: flex;
+  left: 35%;
+}
+#botao {
+  outline: none;
+  background: rgb(36, 169, 231);
+  width: 50%;
+  height: 35px;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: rgb(36, 169, 231);
+  border: none;
+  border-radius: 15px;
+}
+@media (min-width: 1200px) {
+  #centro {
+    width: 510px;
+    height: 562px;
+  }
+  main {
+    position: absolute;
+    display: flex;
+    left: 46%;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gastos mensal</title>
+    <link rel="stylesheet" href="estilo_2.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Faturas mensais</h1>
+      <p>
+        Aqui possamos te ajudar com calculo mensal te ajudar com menos gastos.
+      </p>
+    </header>
+    <nav>
+      <a href="#">calculadora</a>
+      <a href="#">Extratos anteriores</a>
+    </nav>
+    <main>
+      <h2>Inserir os valores abaixo</h2>
+      <section>
+        <div>
+          <input
+            type="text" id="faturas"
+            class="inputs"
+            name="faturas"
+            placeholder="Inserir Nome do Boleto "
+          />
+          <input
+            type="number"
+            class="inputs"
+            name="nomes" id="nomes"
+            placeholder="Inserir Valor do  Boleto "
+          />
+        </div>
+        <input type="button" class="buthon" value="Adicionar" onclick="cadpessoa(faturas.value,nomes.value)">
+        <input type="reset" value="Lista" class="buthon" id="lista" onclick="lista()">
+        <input type="button" value="Finalizar/Extrato" class="buthon" onclick="btnfinalizar()">
+        <form >
+          <table id="tbpessoas">
+            <thead>
+            <tr>
+                <td>FATURA</td>
+                <td>VALOR</td>
+            </tr>
+        </form>
+        
+      </section>
+      
+    </main>
+    <div id="res">
+
+    </div>
+    <script src="scrpt_2.js"></script>
+  </body>
+</html>
